@@ -1,0 +1,459 @@
+body {
+	max-width: 100%;
+	margin: 0px;
+	position: relative;
+	font-family: arial, sans-serif;
+}
+
+h2 {
+	color: #d2108c;
+}
+
+/* header and nav bar */
+header {
+	width: 100%;
+	height: 9.375em;
+	margin-bottom: 3.125em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+header img {
+	position: absolute;
+	left: 3.125em;
+	top: 0.625em;
+}
+
+header .main-nav {
+	float: right;
+	color: white;
+	font-family: 'Palanquin', sans-serif;
+}
+
+header .main-nav li {
+	display: inline-block;
+	padding: 1.25em;
+}
+
+.main-nav a {
+	text-decoration: none;
+	color: #269bc5;
+	font-size: 1.25em;
+}
+
+.main-nav a:hover {
+	color: #7bdafc;
+}
+
+.main-nav li ul {
+	display: none;
+	position: absolute;
+}
+
+.main-nav li:hover ul {
+  display: block;
+}
+
+.main-nav li li {
+	float: none;
+	border: 1px solid #269bc5;
+	font-size: .9em;
+	padding: 0em 1em;
+	display: block;
+}
+
+.main-nav li a {
+  padding: 5px;
+}
+
+.main-nav li:hover ul {
+	margin-left: 10px;
+}
+
+/* end header and nav bar */
+
+/* front page content */
+
+.home-img {
+	width: 100%;
+	margin: 0px;
+	padding-top: 9.375em;
+	display: block;
+}
+
+.homepage-content {
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	padding: 5em 0em;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: .25em;
+	font-family: 'Yantramanav', sans-serif;
+}
+
+/* end of front page content */
+
+/* bath bombs page */
+
+.bathbombs {
+	margin-top: 4em;
+
+}
+
+.row img {
+	width: 100%;
+}
+
+.row {
+	float: right;
+	width: 25%;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #269bc5;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* end of bath bombs page */
+
+/* about the company */
+
+.about {
+	max-width: 75%;
+	margin: auto;
+	margin-top: 10em;
+	margin-bottom: 5em;
+	font-size: 1.1em;
+	line-height: 1.7em;
+}
+
+.about img {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+
+.about-content {
+	width: 22em;
+	float: right;
+}
+
+.about2 {
+	margin: auto;
+	padding-top: 4em;
+	max-width: 75%;
+}
+
+.about h2 {
+	font-family: 'Palanquin', sans-serif;
+}
+
+/* end of about the company */
+
+/* locate us page */
+
+.map {
+	width: 75%;
+	margin: auto;
+	display: inline-block;
+	margin-top: 11em;
+	margin-left: 11em;
+}
+
+.storelist-content {
+	max-width: 60%;
+	padding: 1.25em;
+	margin-left: 23em;
+}
+
+.storelist h2 {
+	font-size: 3em;
+	color: #58aebe;
+	text-align: center;
+
+}
+
+.storelist h3 {
+	text-decoration: underline #58aebe;
+	font-family: 'Palanquin', sans-serif;
+	font-size: 1.5em;
+}
+
+.states {
+	float: right;
+	width: 50%;
+	padding: 0px;
+}
+
+.states ul li {
+	list-style-type: square;
+	font-family: 'verdana', sans-serif;
+	padding: .5em;
+}
+
+/* end of locate us page */
+
+/* secondary pages */
+
+.row {
+	margin-top: 5em;
+	float: left;
+}
+
+.jars {
+	padding-top: 5em;
+}
+
+.whoops img {
+	margin: auto;
+	display: block;
+	padding-top: 10em;
+
+}
+
+.whoops h2 {
+	padding-top: 3em;
+	font-family: 'Palanquin', sans-serif;
+}
+
+.whoops-content {
+	width: 75%;
+	margin: auto;
+}
+
+.whoops ul {
+    list-style: none;
+		line-height: 1.3em;
+		padding: 1em;
+}
+
+.whoops li:before {
+    content: "+";
+    margin-right: 4px;
+}
+
+.whoops h3 {
+	font-family: 'Palanquin', sans-serif;
+}
+
+.info {
+	max-width: 70%;
+	margin-top: 10em;
+	margin-left: 10.5em;
+	padding: 2em;
+	margin-bottom: 3em;
+
+}
+
+.info h2 {
+	font-family: 'Palanquin', sans-serif;
+	font-size: 1.7em;
+}
+
+.info h3 {
+	border-bottom: 1px solid #000;
+	font-family: 'Palanquin', sans-serif;
+	font-size: 1.3em;
+}
+
+.info h4 {
+	font-family: 'Palanquin', sans-serif;
+}
+
+.info p {
+	line-height: 1.8em;
+}
+
+.info li {
+	list-style-type: none;
+	line-height: 2em;
+}
+
+.info li:before {
+	content: "+";
+	margin-right: 4px;
+}
+
+/* end of secondary pages */
+
+.contact {
+	text-align: center;
+	width: 75%;
+	margin: auto;
+	margin-bottom: 5em;
+	padding-top: 11em;
+	font-family: 'Palanquin', sans-serif;
+}
+
+.form {
+	margin: auto;
+}
+
+.form p {
+	padding: 1em;
+	letter-spacing: .1em;
+	color: #269bc5;
+}
+.form h3 {
+	font-size: 3em;
+	letter-spacing: .1em;
+	color: #d2108c;
+}
+
+.form input {
+	padding: 1em;
+	margin: 1em;
+	width: 40%;
+	border: none;
+	background-color: #d3d3d3;
+	font-size: 1em;
+}
+
+.button {
+	text-decoration: none;
+	color: white;
+	background-color: #d2108c;
+	padding: 1em 5em;
+}
+.button:hover {
+	background-color: #d3d3d3;
+	color: white;
+	border: 1px solid lightgrey;
+}
+
+footer {
+	border-top: 1px solid #d3d3d3;
+	width: 100%;
+	padding: 20px;
+	clear: both;
+	text-align: center;
+	color: lightgrey;
+	font-size: 1.2em;
+}
+
+.social i {
+	padding: 0em .7em;
+	color: #d2108c;
+}
+
+.social i:hover {
+	color:  #000;
+}
+
+/* For mobile phones: ------------------ */
+      @media all
+
+      and (max-device-width: 480px)
+
+			header {
+				max-width: 100%;
+			}
+
+			@media (min-width: 1200px) {
+				.bathbombs { margin-left: 12em; }
+			}
+
+			@media (max-width: 960px) {
+				.main-nav { width: 100%; margin-top: 8em; text-align: left; }
+				header { height: 12em; }
+				.home-img { padding-top: 12em; }
+				header img { left: 14em; }
+			}
+
+			@media (max-width: 960px) {
+				.bathbombs img { width: 100%; }
+				.main-nav ul { text-align: center; }
+				.main-nav li { padding: 0em; }
+				.whoops img { margin-top: 18em;}
+				.jars img { width: 100%; }
+			}
+
+			@media (max-width: 600px) {
+				.main-nav ul { width: 100%; }
+				.main-nav ul { text-align: center; }
+				.main-nav li { padding: 0em; }
+				.bathbombs { margin-top: 16em; }
+				.row { width: 100%; margin: auto; }
+				header img { left: 8em; }
+				aside nav { margin-top: 5em; }
+				.whoops img { width: 100%; margin-top: 22em; }
+			}
