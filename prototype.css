@@ -6,11 +6,33 @@ body {
 	font-family: arial, sans-serif;
 }
 
-/* home page */
+/* home page and interactie menu button */
 
 .home-text {
 	position: absolute;
 	width: 100%;
+  	padding: 20px;
+}
+
+.home-text-alt {
+	position: relative;
+	height: 5em;
+}
+
+.home-text-alt img{
+	width: 80px;
+	display: block;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	left: 50%;
+	right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.home-text-alt h1 {
+	font-size: 2em;
+	color: #E83151;
 }
 
 @keyframes fadeIn {
@@ -21,6 +43,10 @@ body {
 	45% {
 	  opacity: .5;
 	}
+
+	75% {
+		opacity: .8;
+	}
   
 	100% {
 	  opacity: 1;
@@ -29,13 +55,23 @@ body {
 
   .animation {
 	color: #E83151;
-	animation: fadeIn 5s;
+	animation: fadeIn 3s;
+  }
+
+  .home-text img {
+	  width: 200px;
+	  display: block;
+	  padding: 0;
+	  margin: 0;
+	  margin-left: auto;
+	  margin-right: auto;
   }
 
 h1 {
 	font-size: 15em;
 	text-align: center;
 	margin-bottom: 0px;
+	margin-top: 0px;
 	font-family: trumpsoftpro, sans-serif;
 }
 
@@ -48,50 +84,78 @@ h2 {
 	font-style: normal;
 }
 
-.nav-icon {
-	font-size: 3em;
-	margin: 10px 10px;
+.mainNavIcon {
+	width: 20%;
 }
 
-nav {
-	display: none;
-	font-family: 'Cabin', sans-serif;
-	position: relative;
+#mySidebar {
+	background-color: #45364B;
 }
 
-nav li {
-	padding: 18px 30px;
-	list-style-type: none;
-	position: relative;
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
 }
 
-nav a {
+.sidebar li {
 	text-decoration: none;
-	color: #FF715B;
+	list-style-type: none;
 }
 
-nav li ul {
+.sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	color: #f1f1f1;
+	font-size: 1.5em;
+	font-family: mr-eaves-modern, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidebar li ul {
 	display: none;
 	position: absolute;
+	z-index: 101;
+
 }
 
-nav li:hover ul {
-	display: block;
-  }
+.sidebar a:hover {
+	color: #818181;
+}
 
-  nav .close-icon {
-	  font-style: normal;
-	  position: absolute;
-	  top: 1em;
-	  left: 1em;
-	  cursor: pointer;
-  }
+#mainHoverTwo ul li {
+	z-index: 100;
+}
 
-  nav li.is-active:before {
-	  content: '';
-	  display: block;
-	  position: absolute;
-  }
+.sidebar .closebtn {
+	position: absolute;
+  	top: 0;
+  	right: 25px;
+  	font-size: 36px;
+  	margin-left: 50px;
+}
+
+.openbtn {
+	font-size: 2em;
+  	cursor: pointer;
+  	background-color: #45364B;
+  	color: white;
+  	padding: .7em;
+  	border: none;
+}
+
+.openbtn:hover {
+	background-color: #444;
+}
 
 /*
 
@@ -136,11 +200,6 @@ nav li:hover ul {
 
 
 /* bath bombs page */
-
-.bathbombs {
-	margin-top: 4em;
-
-}
 
 .row img {
 	width: 100%;

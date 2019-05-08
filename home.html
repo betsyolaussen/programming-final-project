@@ -13,12 +13,36 @@
 
 </head>
 
-<body>
-	<header>
-		<i class="nav-icon fas fa-bomb"></i>
-	</header>
+<body id="nav">
+
+<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<ul>
+			<li><a href="bathbombs.html">Bath Bombs</a></li>
+			<li><a href="jars.html">Jars</a></li>
+			<li><a href="whoops.html">Whoops Bombs</a></li>
+			<li><a href="wheretofindus.html">Locate Us</a></li>
+			<li><a href="aboutthecompany.html">About the Company</a></li>
+			<li><a href="importantinfo.html">Important Information</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<footer>
+				<p>&copy; 2017 da Bomb LLC. All Rights Reserved.</p>
+				<div class="social">
+					<a href="https://www.instagram.com/dabombfizzers/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/dabombfizzers" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/daBombFizzers" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+				</div>
+			</footer>
+	</div>
+
+	<div class="mainNavIcon">
+		<i id="icon" class="openbtn fas fa-bomb" onclick="openNav()"></i>
+	</div>
 
 	<div class="home-text">
+		<img src="images/bathbombicon.png" class="animation">
 		<h1 class="animation">DA BOMB</h1>
 		<h2 class="animation">BATH FIZZERS</h2>
 	</div>
@@ -26,25 +50,7 @@
 		<a href="home.html" ><img src="images/bathbomblogo2.png" class="home_logo"></a>
 	-->
 				
-			<nav>
-				<i class="close-icon">&times;</i>
-				<ul>
-					<li><a href="#!">BOMBS</a>
-						<ul>
-							<li><a href="bathbombs.html">Bath Bombs</a></li>
-							<li><a href="jars.html">Jars</a></li>
-							<li><a href="whoops.html">Whoops Bombs</a></li>
-						</ul>
-					</li>
-					<li><a href="wheretofindus.html">LOCATE US</a></li>
-					<li><a href="aboutthecompany.html">ABOUT THE COMPANY</a>
-						<ul>
-						  <li><a href="importantinfo.html">Important Information</a></li>
-						</ul>
-					</li>
-					<li><a href="contact.html">CONTACT</a></li>
-				</ul>
-			</nav>
+	
 
 
 	<!--
@@ -79,6 +85,7 @@
 	<script src="libraries/p5.js"></script>
 	<script src="libraries/vue.js"></script>
 	<script src="libraries/jquery-3.2.1.min.js"></script>
+	<script src="libraries/modernizr-3.5.0.min.js"></script>
 	<script src="main.js"></script>
 	<script src="app.js"></script>
 </body>
