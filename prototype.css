@@ -132,10 +132,6 @@ h2 {
 	color: #818181;
 }
 
-#mainHoverTwo ul li {
-	z-index: 100;
-}
-
 .sidebar .closebtn {
 	position: absolute;
   	top: 0;
@@ -146,15 +142,15 @@ h2 {
 
 .openbtn {
 	font-size: 2em;
-  	cursor: pointer;
-  	background-color: #45364B;
+	cursor: pointer;
+	background-color: #FF715B;
   	color: white;
-  	padding: .7em;
+  	padding: .5em;
   	border: none;
 }
 
 .openbtn:hover {
-	background-color: #444;
+	background-color: #45364B;
 }
 
 /*
@@ -206,8 +202,9 @@ h2 {
 }
 
 .row {
-	float: right;
 	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -217,14 +214,16 @@ h2 {
     transition: 0.3s;
 }
 
-.myImg:hover {opacity: 0.7;}
+.myImg:hover {
+	opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 25px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
