@@ -33,4 +33,13 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+var i;
+var elements = document.getElementsByClassName("row");
+
+function four() {
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
 
