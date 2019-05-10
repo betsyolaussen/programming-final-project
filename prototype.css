@@ -40,14 +40,6 @@ body {
 	  opacity: 0;
 	}
   
-	45% {
-	  opacity: .5;
-	}
-
-	75% {
-		opacity: .8;
-	}
-  
 	100% {
 	  opacity: 1;
 	}
@@ -84,6 +76,8 @@ h2 {
 	font-style: normal;
 }
 
+ /*interactie navigation button */
+
 .mainNavIcon {
 	width: 20%;
 }
@@ -107,6 +101,9 @@ h2 {
 .sidebar li {
 	text-decoration: none;
 	list-style-type: none;
+	font-family: mr-eaves-modern, sans-serif;
+	font-weight: 200;
+	font-style: normal;
 }
 
 .sidebar a {
@@ -153,9 +150,24 @@ h2 {
 	background-color: #45364B;
 }
 
+/* adjusting content for when nav menu is open */
+#move {
+	margin-left: 0;
+	margin-top: 5em;
+	transition: .4s ease-in-out;
+}
+
+#move-jars {
+	margin-left: 0;
+}
+
+/* end of adjusting content for when nav menu is open */
+
+/* bathbombs page and modal information for jars page as well */
 .bathbombs {
 	display: flex;
 	flex-wrap: wrap;
+	animation: fadeIn .8s;
 }
 
 .row {
@@ -250,6 +262,14 @@ h2 {
 
 /* end of bath bombs page */
 
+/* jars page */
+
+.jars {
+	padding-top: 5em;
+	display: flex;
+}
+
+
 /* about the company */
 
 .about {
@@ -286,14 +306,6 @@ h2 {
 
 /* locate us page */
 
-.map {
-	width: 75%;
-	margin: auto;
-	display: inline-block;
-	margin-top: 11em;
-	margin-left: 11em;
-}
-
 .storelist-content {
 	max-width: 60%;
 	padding: 1.25em;
@@ -328,15 +340,6 @@ h2 {
 /* end of locate us page */
 
 /* secondary pages */
-
-.row {
-	margin-top: 5em;
-	float: left;
-}
-
-.jars {
-	padding-top: 5em;
-}
 
 .whoops img {
 	margin: auto;
@@ -455,25 +458,30 @@ h2 {
 	border: 1px solid lightgrey;
 }
 
-footer {
+.footer {
 	border-top: 1px solid #d3d3d3;
 	width: 100%;
-	height: 60px;
+	height: 10em;
 	position: absolute;
 	bottom: 0;
 	clear: both;
 	text-align: center;
 	color: lightgrey;
 	font-size: 1.2em;
-	margin-bottom: 3em;
+	font-family: mr-eaves-modern, sans-serif;
+	font-weight: 200;
+	font-style: normal;
 }
 
-.social i {
-	padding: 0em 1em;
+.social-icons a {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
 	color: #FF715B;
 }
 
-.social i:hover {
+.social-icons i:hover {
 	color:  #000;
 }
 

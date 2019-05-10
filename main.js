@@ -1,15 +1,17 @@
 
+document.documentElement.className += ' js';
+
 /*menu function on home page*/
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "350px";
-  document.getElementById("main").style.marginLeft = "150px";
+  document.getElementById("move").style.marginLeft = "30%";
 }
 
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("move").style.marginLeft= "0";
 }
 
 // Get the modal

@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="prototype.css">
 </head>
 
-<body id="app">
+<body id="app" class=".scene-element">
 
 
 		<div class="home-text-alt">
@@ -34,18 +34,19 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 
-				<footer>
-						<p>&copy; 2017 da Bomb LLC. All Rights Reserved.</p>
-						<div class="social">
+				<div class="footer">
+						<p>&copy; 2019 da Bomb LLC. All Rights Reserved.</p>
+
+						<div class="social-icons">	
 							<a href="https://www.instagram.com/dabombfizzers/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
 							<a href="https://www.facebook.com/dabombfizzers" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-							<a href="https://twitter.com/daBombFizzers" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+							<a href="https://twitter.com/daBombFizzers" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>		
 						</div>
-					</footer>
+				</div>
 			</div>
 
 			<!--Beginning of bath bomb grid-->			
-		<div class="bathbombs">
+		<div id="move" class="bathbombs">
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
 					<span class="close">&times;</span>
@@ -158,11 +159,9 @@
 	</div>
 			
 
-		<script src="libraries/p5.js"></script>
 		<script src="libraries/vue.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="libraries/modernizr-3.5.0.min.js"></script>
 		<script src="main.js"></script>
-		<script src="app.js"></script>
 </body>
 </html>
