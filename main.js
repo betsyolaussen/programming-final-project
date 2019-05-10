@@ -35,3 +35,11 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+$(function() {
+  $('.state').hide();
+  $("#stateselector").change(function(){
+    $(".state").hide();
+    $('#' + $(this).val()).show();
+  });
+});
+

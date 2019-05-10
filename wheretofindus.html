@@ -13,36 +13,54 @@
 
 <body>
 
-		<div class="home-text-alt">
-				<div class="mainNavIcon">
-						<i id="icon" class="openbtn fas fa-bomb" onclick="openNav()"></i>
-				</div>
-
-				<a href="home.html"><img src="images/bathbombicon.png"></a>
+	<div class="home-text-alt">
+		<div class="mainNavIcon">
+			<i id="icon" class="openbtn fas fa-bomb" onclick="openNav()"></i>
 		</div>
 
-		<div id="mySidebar" class="sidebar">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<ul>
-					<li><a href="bathbombs.html">Bath Bombs</a></li>
-					<li><a href="jars.html">Jars</a></li>
-					<li><a href="whoops.html">Whoops Bombs</a></li>
-					<li><a href="wheretofindus.html">Locate Us</a></li>
-					<li><a href="aboutthecompany.html">About the Company</a></li>
-					<li><a href="importantinfo.html">Important Information</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-				<div class="footer">
-						<p>&copy; 2019 da Bomb LLC. All Rights Reserved.</p>
+		<a href="home.html"><img src="images/bathbombicon.png"></a>
+	</div>
 
-						<div class="social-icons">	
-							<a href="https://www.instagram.com/dabombfizzers/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-							<a href="https://www.facebook.com/dabombfizzers" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-							<a href="https://twitter.com/daBombFizzers" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>		
-						</div>
-				</div>
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<ul class="menu">
+			<li><a href="bathbombs.html">Bath Bombs</a></li>
+			<li><a href="jars.html">Jars</a></li>
+			<li><a href="whoops.html">Whoops Bombs</a></li>
+		</ul>
+		<ul class="submenu">
+			<li><a href="wheretofindus.html">Locate Us</a></li>
+			<li><a href="aboutthecompany.html">About the Company</a></li>
+			<li><a href="importantinfo.html">Important Information</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div class="footer">
+		<p>&copy; 2019 da Bomb LLC. All Rights Reserved.</p>
+
+			<div class="social-icons">	
+				<a href="https://www.instagram.com/dabombfizzers/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/dabombfizzers" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/daBombFizzers" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>		
 			</div>
+		</div>
+	</div>
+		
 
+	<select id="stateselector">
+		<option value="sas">Select a State</option>
+		<option value="minnesota">Minnesota</option>
+		<option value="alaska">Alaska</option>
+		<option value="southdakota">South Dakota</option>
+		<option value="iowa">Iowa</option>
+	</select>
+
+
+	<div class="output">
+		<div id="minnesota" class="state">;akldslfkads</div>
+		<div id="alaska" class="state">lkajsdf;kasd</div>
+		<div id="southdakota" class="state">a;fklasdf</div>
+		<div id="iowa" class="state">jal;ksdjkl;fad</div>
+	</div>
 
 	<section class="storelist">
 		<h2>Locate Us!</h2>
@@ -894,7 +912,7 @@
 					</div>
 
 	<script src="libraries/vue.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="libraries/jquery-3.4.1.min.js"></script>
 	<script src="libraries/modernizr-3.5.0.min.js"></script>
 	<script src="main.js"></script>
 </body>
