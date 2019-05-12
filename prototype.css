@@ -312,43 +312,96 @@ h2 {
 /* end of about the company */
 
 /* where to find us page */
-
-.minnesota {
-	color: #fff;
-	background-color: pink;
+.state-text {
+	position: relative;
+	top: 4em;
+}
+select {
+	font-family: mr-eaves-modern, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: .5em;
+}
+.custom-select {
+	position: relative;
+	top: 10em;
+	margin: 0 auto 0 auto;
+	display: block;
+   	height: 29px;
+   	overflow: hidden;
+	padding: 1em 15em;
 }
 
-.storelist-content {
-	max-width: 60%;
-	padding: 1.25em;
-	margin-left: 23em;
+.custom-select::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  right: 1em;
+  margin-top:-4px;
+  z-index: 150;
+  
 }
 
-.storelist h2 {
-	font-size: 3em;
-	color: #58aebe;
+.custom-select select {
+   background:none;
+   appearance: none;
+   outline: none;
+   border: 1px solid transparent;
+   font-size: 14px;
+   height: 29px;
+   padding: 29px;
+   width: 100%;
+}
+
+option {
+	text-align: left;
+}
+.rounded {
+	-webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   border-radius: 30px;
+}
+
+.yellow  { 
+	background-color: #45364B; 
+}
+
+.yellow select  { 
+	color: white; 
+}
+
+#stateselector {
+	font-size: 1.2em;
+	line-height: 1.3em;
+	font-family: mr-eaves-modern, sans-serif;
+	font-weight: 400;
+	font-style: normal;	
+	text-transform: uppercase;
+}
+
+.output {
 	text-align: center;
-
+	text-decoration: none;
+	font-size: 1em;
 }
 
-.storelist h3 {
-	text-decoration: underline #58aebe;
-	font-family: 'Palanquin', sans-serif;
-	font-size: 1.5em;
+.state {
+	position: relative;
+	top: 8em;
+	font-size: 1.3em;
+	line-height: 1.5em;
+	font-family: mr-eaves-modern, sans-serif;
+	font-weight: 400;
+	font-style: normal;	
+	text-transform: uppercase;
+	overflow: hidden;
 }
 
-.states {
-	float: right;
-	width: 50%;
-	padding: 0px;
+.state li {
+	list-style-type: none;
 }
-
-.states ul li {
-	list-style-type: square;
-	font-family: 'verdana', sans-serif;
-	padding: .5em;
-}
-
 /* end of locate us page */
 
 /* secondary pages */
