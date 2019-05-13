@@ -15,12 +15,14 @@ $(function() {
 function openNav() {
   document.getElementById("mySidebar").style.width = "350px";
   document.getElementById("move").style.marginLeft = "30%";
+  document.getElementById("move").style.marginTop = "5%";
 }
 
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("move").style.marginLeft= "0";
+  document.getElementById("move").style.marginTop= "0";
 }
 
 // Get the modal

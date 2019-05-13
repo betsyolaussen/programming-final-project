@@ -3,7 +3,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	position: relative;
-	font-family: arial, sans-serif;
+	font-family: mr-eaves-modern, sans-serif;
 }
 
 /* home page and interactie menu button */
@@ -54,9 +54,7 @@ body {
 	  width: 200px;
 	  display: block;
 	  padding: 0;
-	  margin: 0;
-	  margin-left: auto;
-	  margin-right: auto;
+	  margin: 0 auto 0 auto;
   }
 
 h1 {
@@ -160,7 +158,7 @@ h2 {
 /* adjusting content for when nav menu is open */
 #move {
 	margin-left: 0;
-	margin-top: 5em;
+	margin-right: 0;
 	transition: .4s ease-in-out;
 }
 
@@ -415,17 +413,18 @@ option {
 /* whoops page */
 
 .whoops img {
-	width: 25%;
-	margin-left: auto;
-	margin-right: auto;
+	position: relative;
+	top: 8em;
+	width: 50%;
+	margin: 0 auto 0 auto;
 	display: block;
-	padding-top: 10em;
-
+	
 }
 
 .whoops h2 {
 	padding-top: 3em;
-	font-family: 'Palanquin', sans-serif;
+	font-family: trumpsoftpro, sans-serif;
+	font-size: 3em;
 }
 
 .whoops-content {
@@ -435,17 +434,14 @@ option {
 
 .whoops ul {
     list-style: none;
-		line-height: 1.3em;
-		padding: 1em;
-}
-
-.whoops li:before {
-    content: "+";
-    margin-right: 4px;
+	line-height: 1.5em;
+	padding: 1em;
+	font-size: 1.2em;
 }
 
 .whoops h3 {
-	font-family: 'Palanquin', sans-serif;
+	font-family: trumpsoftpro, sans-serif;
+	font-size: 2em;
 }
 
 /* end of whoops page */
@@ -600,17 +596,17 @@ option {
 				.bathbombs img { width: 100%; }
 				.main-nav ul { text-align: center; }
 				.main-nav li { padding: 0em; }
-				.whoops img { margin-top: 18em;}
+				.whoops img { width: 70%; margin-top: 2em;}
 				.jars img { width: 100%; }
 			}
 
 			@media (max-width: 600px) {
-				.main-nav ul { width: 100%; }
-				.main-nav ul { text-align: center; }
-				.main-nav li { padding: 0em; }
-				.bathbombs { margin-top: 16em; }
+				.bathbombs { margin-top: 16em; width: 100%;}
 				.row { width: 100%; margin: auto; }
 				header img { left: 8em; }
 				aside nav { margin-top: 5em; }
-				.whoops img { width: 100%; margin-top: 22em; }
+				.whoops img { width: 100%; margin-top: 1em; }
+				.state-text {max-width: 75%; margin: auto;}
+				.custom-select {padding: 1em 5em;}
+				.home-text {max-width: 90%; margin: auto;}
 			}
