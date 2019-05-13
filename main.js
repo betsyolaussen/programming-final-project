@@ -1,5 +1,14 @@
 
-document.documentElement.className += ' js';
+/*jquery function to the drop down menu on the locate us page*/
+
+$(function() {
+  $('.state').hide();
+  $("#stateselector").change(function(){
+    $(".state").hide();
+    $('#' + $(this).val()).show();
+  });
+});
+
 
 /*menu function on home page*/
 
@@ -30,11 +39,7 @@ img.click(function(){
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-$(function() {
-  $('.state').hide();
-  $("#stateselector").change(function(){
-    $(".state").hide();
-    $('#' + $(this).val()).show();
-  });
-});
-
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
